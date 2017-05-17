@@ -1,5 +1,6 @@
 #!/bin/bash
- 
+
+#if needed the script can be easily put into a loop so that it can read multiple sambamba_output at one.
 ##Before starting make sure the file is tab delimited - remove any spaces and ";" to improve readability (it is my personal taste)
 sed -ie $'s|;|\t|g' NGS148_34_139558_CB_CMCMD_S33_R1_001.sambamba_output.txt
 sed -ie $'s|\s|\t|g' NGS148_34_139558_CB_CMCMD_S33_R1_001.sambamba_output.txt
